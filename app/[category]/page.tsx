@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation"
 import { AlertCircle } from "lucide-react"
+import { ArrowLeft, ExternalLink, Hash } from "lucide-react"
+
 
 import {
   CATEGORY_KEYS,
@@ -10,7 +12,7 @@ import {
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { CategoryTabs } from "@/components/category-tabs"
-import { SearchBar } from "@/components/search-bar"
+//import { SearchBar } from "@/components/search-bar"
 import { EntityCard } from "@/components/entity-card"
 import { Pagination } from "@/components/pagination"
 
@@ -86,12 +88,9 @@ export default async function CategoryPage({ params, searchParams }: Props) {
 
           <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <CategoryTabs category={category as Category} />
-            <SearchBar
-              category={category as Category}
-              defaultValue={query}
-              placeholder={`Search ${meta.label.toLowerCase()}...`}
-            />
+            
           </div>
+
 
           {error ? (
             <div className="flex flex-col items-center justify-center gap-3 rounded-xl border border-destructive/40 bg-destructive/5 p-10 text-center">
