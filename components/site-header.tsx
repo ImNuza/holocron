@@ -13,12 +13,12 @@ export function SiteHeader() {
     <header className="sticky top-0 z-30 border-b border-border/60 bg-background/80 backdrop-blur supports-backdrop-filter:bg-background/60">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 md:px-8">
         <Link href="/" className="group flex items-center gap-2.5" aria-label="Holocron home">
-          <span
-            aria-hidden
-            className="grid h-9 w-9 place-items-center rounded-md border border-primary/40 bg-primary/10 text-primary transition-colors group-hover:bg-primary/20"
-          >
-            <Sparkles className="h-4 w-4" />
-          </span>
+            <span
+              aria-hidden
+              className="grid h-9 w-9 place-items-center rounded-md border border-primary/40 bg-primary/10 text-primary transition-all duration-300 animate-pulse group-hover:animate-none group-hover:bg-primary/20 group-hover:shadow-[0_0_15px_oklch(0.9_0.18_95)]"
+            >
+              <Sparkles className="h-4 w-4" />
+            </span>
           <span className="flex flex-col leading-none">
             <span className="font-display text-lg font-semibold tracking-tight text-foreground">
               Holocron
