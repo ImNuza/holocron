@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation"
 import { AlertCircle } from "lucide-react"
+import { ArrowLeft, ExternalLink, Hash } from "lucide-react"
+
 
 import {
   CATEGORY_KEYS,
